@@ -24,7 +24,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game (){
+function game (){ //this game is best out of 5 (so a tie in one or three rounds can result in a tie of the whole game)
     let playertotal = 0, computertotal = 0, tietotal = 0;
     for (let x = 0; x<5; x++){
         let rock = 0, paper = 0, scissor = 0, pwon;
