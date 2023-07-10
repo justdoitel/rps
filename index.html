@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="icon"  href="./slay.png" type="image/png"> 
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Yellowtail&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+
 </head>
 <body>
+    <header> <img src="slay.png" class="logo"> <span>Rock Paper Scissors</span> </header>
+    <div class="content">
+        <div class="selection"> 
+            <div class="player">
+                <img src="skull.png" alt="">
+                <span class="scoring">Human: <span class="score">0</span></span>
+                <span class="instruction">Choose a weapon!</span>
+            </div>
+            <div class="btns big">
+                <input type="image" src="rock.png" alt="Picture of a hand showing a rock symbol" data-choice = "rock" class="hoverable">
+                <input type="image" src="paper.png" alt="Picture of a hand showing a paper symbol" data-choice = "paper" class="hoverable">
+                <input type="image" src="scissor.png" alt="Picture of a hand showing a scissor symbol" data-choice = "scissor" class="hoverable">
+            </div>
+            <div class="robot">
+                <img src="Robot.png" alt="">
+                <span class="scoring">Robot: <span class="score">0</span></span>
+                <span class="instruction">Waiting...</span>
+            </div>
+        </div>
+        <div class="btns small">
+            <input type="image" src="rock.png" alt="Picture of a hand showing a rock symbol" data-choice = "rock" class="hoverable">
+            <input type="image" src="paper.png" alt="Picture of a hand showing a paper symbol" data-choice = "paper" class="hoverable">
+            <input type="image" src="scissor.png" alt="Picture of a hand showing a scissor symbol" data-choice = "scissor" class="hoverable">
+        </div>
+        <div class="btn-container">
+            <button id="reset" class="hoverable">Reset</button>
+        </div>
+    </div>    
     <script src="code.js"></script>
 </body>
 </html>

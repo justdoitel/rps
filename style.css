@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+
+body{
+    display: grid;
+}
+
+.logo {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;    
+}
+
+header>span {
+    font-size: 4em;
+    align-self: center;
+    font-family:'Kablammo', monospace;
+    margin: 0 auto;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header {
+    display: flex;
+    height: 5em;
+    background-color: gray;
+    
+    width: 100%;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.selection > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+.scoring {
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 3em;
+}
+
+.instruction {
+    font-family: monospace;
+    font-size: 2em;
+}
+
+.selection img, .selection input{
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+
+.small {
+    display: none;
+}
+
+.btns input{
+    max-width: 30%;
+}
+
+.content {
+    justify-self: center;
+}
+
+.hoverable:hover{
+    filter: brightness(150%);
+}
+
+@media (max-width: 756px) {
+    header>span { font-size: 3em; }
+    .btns.big {display: none; min-height: 100%;}
+    .btns.small{display: flex; margin-top: 18px;}
+}
+
+@media (max-width: 565px) {
+    header>span { font-size: 2em; }
+    .logo { display: none;}
+    .selection .scoring {font-size: 1.5em;}
+    .instruction {font-size: 1em;}
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#reset{
+    text-align: center;
+    padding: 5px 15px;
+    margin-top: 30px;
+    background-color: yellowgreen;
+    display: none;
+}
+
+.winner {
+    color: red;
+}
