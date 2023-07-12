@@ -1,4 +1,4 @@
-function getRobotChoice (){
+function getRobotChoice (){ //TODO: delay 500-1000 second to make it look like it's thinking (perhaps with loading symbol)
     let x = Math.floor(Math.random()*3+1);
     if(x==1) return "rock"
     if(x==2) return "paper"
@@ -66,16 +66,16 @@ function playRound(playerSelection, robotSelection) { //TODO: make this into a f
 
     if(robotScore===5||playerScore===5){
         if(playerScore===5){
-            document.querySelector(".player .scoring").style.color ="red";
-            playerInstruction.style.color ="red";
+            document.querySelector(".player .scoring").style.color ="green";
+            playerInstruction.style.color ="green";
         } else {
-            document.querySelector(".robot .scoring").style.color ="red";
-            robotInstruction.style.color ="red";
+            document.querySelector(".robot .scoring").style.color ="green";
+            robotInstruction.style.color ="green";
         }
         resetbtn.style.display = "inline-block"
         for (btn of btns){
             btn.disabled = true;
-            btn.classList.remove("hoverable");
+            btn.classList.add("disabled");
         }
     }
 }
@@ -93,7 +93,7 @@ resetbtn.addEventListener("click",()=>{
     resetbtn.style.display = "none";
     for (btn of btns){
         btn.disabled = false;
-        btn.classList.add("hoverable");
+        btn.classList.remove("disabled"); 
     }
     playerScore=0;
     robotScore=0;

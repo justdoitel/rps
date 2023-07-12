@@ -100,7 +100,11 @@ p {
     justify-self: center;
 }
 
-.hoverable:hover{
+.disabled, .disabled:hover{
+    filter: brightness(50%);
+}
+
+input:hover, button:hover{
     filter: brightness(150%);
 }
 
