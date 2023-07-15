@@ -137,3 +137,12 @@ input:hover, button:hover{
 .winner {
     color: red;
 }
+
+@media (max-width: 316px) {
+    header{
+        display: none;
+    }
+    body {
+        align-items: center;
+    }
+}
