@@ -108,13 +108,13 @@ input:hover, button:hover{
     filter: brightness(150%);
 }
 
-@media (max-width: 756px) {
+@media (max-width: 750px) {
     header>span { font-size: 3em; }
     .btns.big {display: none; min-height: 100%;}
     .btns.small{display: flex; margin-top: 18px;}
 }
 
-@media (max-width: 565px) {
+@media (max-width: 560px) {
     header>span { font-size: 2em; }
     .logo { display: none;}
     .selection .scoring {font-size: 1.5em;}
